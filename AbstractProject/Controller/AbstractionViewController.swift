@@ -44,4 +44,31 @@ public class AbstractionViewController: UIPageViewController, UIPageViewControll
                                completion: nil)
         }
     }
+    
+    //MARK:- Datasource Required Methods
+    /// Swipe Left
+    public func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?
+    {
+        guard let viewControllerIndex = orderedAbstractionViews.index(of: viewController)
+            else
+        {
+            return nil
+        }
+        
+        let previousIndex = viewControllerIndex - 1
+        
+        guard previousIndex >= 0
+            else
+        {
+            return orderedAbstractionViews.last
+        }
+        
+        guard orderedAbstractionViews.count > previousIndex
+            else
+        {
+            return nil
+        }
+        
+        return orderedAbstractionViews[previousIndex]
+    }
 }
