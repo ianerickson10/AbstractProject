@@ -9,14 +9,34 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--BinaryViewController-->
         <scene sceneID="bA6-I6-34C">
             <objects>
-                <viewController id="bEB-sc-gWE" sceneMemberID="viewController">
+                <viewController title="BinaryViewController" id="bEB-sc-gWE" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="edV-t2-XeX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hV-vc-S9u">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yt3-fS-V9k">
+                                <rect key="frame" x="67" y="100" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9hV-vc-S9u" firstAttribute="centerY" secondItem="edV-t2-XeX" secondAttribute="centerY" id="296-6N-05a"/>
+                            <constraint firstItem="9hV-vc-S9u" firstAttribute="leading" secondItem="8ug-lJ-2b7" secondAttribute="leading" constant="166" id="Eo7-nC-p5D"/>
+                            <constraint firstItem="yt3-fS-V9k" firstAttribute="leading" secondItem="8ug-lJ-2b7" secondAttribute="leading" constant="67" id="Gck-FV-BqB"/>
+                            <constraint firstItem="9hV-vc-S9u" firstAttribute="top" secondItem="yt3-fS-V9k" secondAttribute="bottom" constant="95" id="H8U-OV-E6M"/>
+                            <constraint firstItem="yt3-fS-V9k" firstAttribute="top" secondItem="8ug-lJ-2b7" secondAttribute="top" constant="80" id="Kv4-eo-MSf"/>
+                            <constraint firstItem="yt3-fS-V9k" firstAttribute="centerX" secondItem="edV-t2-XeX" secondAttribute="centerX" id="RNZ-g8-efi"/>
+                            <constraint firstItem="yt3-fS-V9k" firstAttribute="centerX" secondItem="9hV-vc-S9u" secondAttribute="centerX" id="yZj-Zf-BJ8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8ug-lJ-2b7"/>
                     </view>
                 </viewController>
@@ -24,14 +44,34 @@
             </objects>
             <point key="canvasLocation" x="1134" y="796"/>
         </scene>
-        <!--View Controller-->
+        <!--LogicalGateController-->
         <scene sceneID="P6C-AX-BwP">
             <objects>
-                <viewController id="Fho-ZJ-VVm" sceneMemberID="viewController">
+                <viewController title="LogicalGateController" id="Fho-ZJ-VVm" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Vv-bp-JpI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6E-ek-rQS">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XJI-5B-m9k">
+                                <rect key="frame" x="67" y="102" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XJI-5B-m9k" firstAttribute="top" secondItem="yre-Zu-AKu" secondAttribute="top" constant="82" id="6tc-sP-UWz"/>
+                            <constraint firstItem="XJI-5B-m9k" firstAttribute="leading" secondItem="yre-Zu-AKu" secondAttribute="leading" constant="67" id="8RB-m6-x1x"/>
+                            <constraint firstItem="u6E-ek-rQS" firstAttribute="top" secondItem="XJI-5B-m9k" secondAttribute="bottom" constant="93" id="BPR-Ai-3XF"/>
+                            <constraint firstItem="XJI-5B-m9k" firstAttribute="centerX" secondItem="u6E-ek-rQS" secondAttribute="centerX" id="N25-as-elr"/>
+                            <constraint firstItem="u6E-ek-rQS" firstAttribute="leading" secondItem="yre-Zu-AKu" secondAttribute="leading" constant="166" id="WXn-CO-MTO"/>
+                            <constraint firstItem="XJI-5B-m9k" firstAttribute="centerX" secondItem="0Vv-bp-JpI" secondAttribute="centerX" id="lC3-Ha-h9p"/>
+                            <constraint firstItem="u6E-ek-rQS" firstAttribute="centerY" secondItem="0Vv-bp-JpI" secondAttribute="centerY" id="mAc-7a-uNC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="yre-Zu-AKu"/>
                     </view>
                 </viewController>
@@ -47,14 +87,34 @@
             </objects>
             <point key="canvasLocation" x="138" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--SwiftViewContoller-->
         <scene sceneID="JyF-r2-bBP">
             <objects>
-                <viewController id="nDD-CF-bfS" sceneMemberID="viewController">
+                <viewController title="SwiftViewContoller" id="nDD-CF-bfS" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Mn-Yk-jLA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2R-C6-PcP">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rOk-rc-uje">
+                                <rect key="frame" x="67" y="104" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rOk-rc-uje" firstAttribute="top" secondItem="UxQ-QO-yVz" secondAttribute="top" constant="84" id="Mrg-r3-pmX"/>
+                            <constraint firstItem="rOk-rc-uje" firstAttribute="centerX" secondItem="l2R-C6-PcP" secondAttribute="centerX" id="MsE-w1-q1P"/>
+                            <constraint firstItem="l2R-C6-PcP" firstAttribute="leading" secondItem="UxQ-QO-yVz" secondAttribute="leading" constant="166" id="TMj-EC-xEM"/>
+                            <constraint firstItem="rOk-rc-uje" firstAttribute="leading" secondItem="UxQ-QO-yVz" secondAttribute="leading" constant="67" id="Tzd-Hq-9HG"/>
+                            <constraint firstItem="l2R-C6-PcP" firstAttribute="top" secondItem="rOk-rc-uje" secondAttribute="bottom" constant="91" id="f87-ej-yad"/>
+                            <constraint firstItem="l2R-C6-PcP" firstAttribute="centerY" secondItem="9Mn-Yk-jLA" secondAttribute="centerY" id="fxB-pz-qbg"/>
+                            <constraint firstItem="rOk-rc-uje" firstAttribute="centerX" secondItem="9Mn-Yk-jLA" secondAttribute="centerX" id="p0f-vn-G6o"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="UxQ-QO-yVz"/>
                     </view>
                 </viewController>
@@ -62,14 +122,34 @@
             </objects>
             <point key="canvasLocation" x="820" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--BlockViewController-->
         <scene sceneID="qk7-Kf-y3l">
             <objects>
-                <viewController id="KSZ-rG-SG6" sceneMemberID="viewController">
+                <viewController title="BlockViewController" id="KSZ-rG-SG6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OAP-gk-XHA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ans-Lq-Wha">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lVL-aT-ugH">
+                                <rect key="frame" x="67" y="103" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lVL-aT-ugH" firstAttribute="top" secondItem="2ry-9g-ix3" secondAttribute="top" constant="83" id="Cdv-3G-nPq"/>
+                            <constraint firstItem="lVL-aT-ugH" firstAttribute="leading" secondItem="2ry-9g-ix3" secondAttribute="leading" constant="67" id="Ltl-0g-FdG"/>
+                            <constraint firstItem="ans-Lq-Wha" firstAttribute="centerY" secondItem="OAP-gk-XHA" secondAttribute="centerY" id="VPW-OP-Jsa"/>
+                            <constraint firstItem="ans-Lq-Wha" firstAttribute="top" secondItem="lVL-aT-ugH" secondAttribute="bottom" constant="92" id="W3d-UB-cVg"/>
+                            <constraint firstItem="lVL-aT-ugH" firstAttribute="centerX" secondItem="OAP-gk-XHA" secondAttribute="centerX" id="aro-3Y-ohD"/>
+                            <constraint firstItem="ans-Lq-Wha" firstAttribute="leading" secondItem="2ry-9g-ix3" secondAttribute="leading" constant="166" id="tFd-Ci-Urg"/>
+                            <constraint firstItem="lVL-aT-ugH" firstAttribute="centerX" secondItem="ans-Lq-Wha" secondAttribute="centerX" id="ue9-3F-gtA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2ry-9g-ix3"/>
                     </view>
                 </viewController>
@@ -77,14 +157,34 @@
             </objects>
             <point key="canvasLocation" x="1492" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--ByteCodeviewController-->
         <scene sceneID="SKG-Zk-9lY">
             <objects>
-                <viewController id="bC2-Ia-xG5" sceneMemberID="viewController">
+                <viewController title="ByteCodeviewController" id="bC2-Ia-xG5" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oZS-pj-DLg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tD1-EP-sNK">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EqS-t8-Wfg">
+                                <rect key="frame" x="67" y="101" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.84465640779999995" green="0.51457053419999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EqS-t8-Wfg" firstAttribute="centerX" secondItem="oZS-pj-DLg" secondAttribute="centerX" id="1Ud-do-7ve"/>
+                            <constraint firstItem="EqS-t8-Wfg" firstAttribute="leading" secondItem="UlQ-bX-1We" secondAttribute="leading" constant="67" id="9hl-D9-Vmn"/>
+                            <constraint firstItem="tD1-EP-sNK" firstAttribute="top" secondItem="EqS-t8-Wfg" secondAttribute="bottom" constant="94" id="GED-jQ-9yK"/>
+                            <constraint firstItem="EqS-t8-Wfg" firstAttribute="top" secondItem="UlQ-bX-1We" secondAttribute="top" constant="81" id="Jjd-jb-0li"/>
+                            <constraint firstItem="tD1-EP-sNK" firstAttribute="centerY" secondItem="oZS-pj-DLg" secondAttribute="centerY" id="N4I-hy-a6w"/>
+                            <constraint firstItem="EqS-t8-Wfg" firstAttribute="centerX" secondItem="tD1-EP-sNK" secondAttribute="centerX" id="Oub-1d-WL5"/>
+                            <constraint firstItem="tD1-EP-sNK" firstAttribute="leading" secondItem="UlQ-bX-1We" secondAttribute="leading" constant="166" id="ial-07-lD1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="UlQ-bX-1We"/>
                     </view>
                 </viewController>
